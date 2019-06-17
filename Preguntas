@@ -1,0 +1,10 @@
+2. Análisis de código
+
+¿Que hacen los parametros argc y argv?
+R/:	* argc: argument count. Es un argumento de tipo entero del main al iniciar el programa, este indica que cantidad de argumentos serán enviados al programa. 
+	* argv: argument value. Es un apuntador de un array el cual contiene todos los string que utilizara el programa 	 
+
+¿Como se usa el programa? (Observe el video).
+R/:	El programa por si solo al ejecutarlo "./prueba" nos devolvera el index = 1 por defecto ya que la posicion 0 es el mismo programa. De ahi pasamos a tener 2 "if" Donde se detecta si al compilar el programa pasamos como parametros
+		1. La palabra "Debug" entrando así a ejecutar el primer "if"
+		2. El string "-file" al detectar esa cadena de caracteres el programa esperaría recibir el nombre de algun archivo para luego escribirlo en consola; si esto no se escribe entonces como respuesta se recibe un "Null" 
